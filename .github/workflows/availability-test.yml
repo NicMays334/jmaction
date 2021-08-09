@@ -20,7 +20,7 @@ jobs:
       - name: JMeter Availability Test
         uses: QAInsights/PerfAction@2.0
         with:
-          test-plan-path: ./availability_tests/eshop-transaction-test.jmx
+          test-plan-path: ./eshop-transaction-test.jmx
           args: "-Jurl=${{ env. HOST}}"
           # args: "-Jurl=${{ secrets.SECRET_FOR_HOST }}"
       - name: Upload Test Results

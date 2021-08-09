@@ -21,7 +21,7 @@ jobs:
         uses: QAInsights/PerfAction@2.0
         with:
           test-plan-path: ./eshop-transaction-test.jmx
-          args: "-Jurl=${{ env.HOST}}"
+          args: "-Jurl=${{ env.HOST }}"
       
       - name: Upload Test Results
         uses: actions/upload-artifact@v2
